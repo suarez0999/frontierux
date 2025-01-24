@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout-DailyUI-001.astro";
+import ConversatioSVG from "../../components/svg/conversation-4.svg";
+---
+
+<Layout>
+  <!-- Navegación -->
+  <nav class="bg-white shadow-md fixed top-0 w-full z-10 font-Poppins">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-indigo-600">ConversApp</div>
+      <!-- Menú -->
+      <ul
+        class="flex space-x-6 text-gray-700 font-medium"
+        aria-label="Main Navigation"
+      >
+        <li>
+          <a href="#home" class="hover:text-indigo-600 transition">Inicio</a>
+        </li>
+        <li>
+          <a href="#service" class="hover:text-indigo-600 transition"
+            >Servicios</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-indigo-600 transition"
+            >Contacto</a
+          >
+        </li>
+        <li>
+          <a
+            href="#login"
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md shadow hover:bg-indigo-700 transition"
+          >
+            Iniciar Sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <div
+    class="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-100 flex flex-col md:flex-row items-center justify-center p-6 md:p-12 mt-16 lg:mt-0"
+  >
+    <!-- Sección de Texto -->
+    <div class="max-w-lg md:w-1/2 flex flex-col space-y-6">
+      <!-- Título Principal -->
+      <h1
+        class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
+      >
+        Conecta con amigos <span class="text-indigo-600"
+          >¡y vive la experiencia!</span
+        >
+      </h1>
+
+      <!-- Descripción -->
+      <p class="text-lg text-gray-700 mt-2">
+        Únete a nuestra app para comunicarte fácil, rápido y divertido. Comparte
+        momentos y mantente conectado con quienes más importan.
+      </p>
+
+      <!-- Botón Principal -->
+      <button
+        class="mt-4 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg transition-transform duration-300 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring focus:ring-indigo-300"
+      >
+        Regístrate Ahora
+      </button>
+    </div>
+
+    <!-- Imagen SVG -->
+    <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center items-center">
+      <ConversatioSVG class="w-full max-w-sm sm:max-w-md lg:max-w-lg" />
+    </div>
+  </div>
+</Layout>

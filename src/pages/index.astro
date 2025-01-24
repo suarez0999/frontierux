@@ -1,8 +1,90 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<h1>retos frontend</h1>
+  <main
+    class="p-6 space-y-8 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors"
+  >
+    <header class="text-center">
+      <h1 class="text-4xl font-bold">Retos Frontend</h1>
+    </header>
+
+    <section>
+      <header class="mb-4">
+        <h2 class="text-2xl font-semibold">DailyUI</h2>
+      </header>
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article
+          class="space-y-4 bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 transition-colors"
+        >
+          <h3 class="text-xl font-medium">DailyUI #001</h3>
+          <p>
+            <span class="font-semibold">Indicación:</span> Regístrate. <br />
+            Crea una página de registro, un modal, un formulario o una pantalla de
+            aplicación relacionada con la inscripción a algo. Puede ser para un evento
+            de voluntariado, la inscripción a un concurso, un sorteo o cualquier
+            cosa que puedas imaginar.
+          </p>
+          <a
+            href="/dailyui-001"
+            class="block text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
+            aria-label="Ir a la página de registro"
+          >
+            Ir a página
+          </a>
+        </article>
+        <article
+          class="space-y-4 bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 transition-colors"
+        >
+          <h3 class="text-xl font-medium">DailyUI #002</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            molestias voluptatum vel, fugiat culpa delectus voluptas ipsam.
+            Dolores adipisci cupiditate at neque! Maiores similique eaque nihil
+            officiis, fugiat laudantium dolorum!
+          </p>
+          <a
+            href="/registrate/home"
+            class="block text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
+            aria-label="Ir a la página de registro"
+          >
+            Ir a página
+          </a>
+        </article>
+      </section>
+    </section>
+
+    <section>
+      <header class="mb-4">
+        <h2 class="text-2xl font-semibold">Frontend Mentor</h2>
+      </header>
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article
+          class="space-y-4 bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 transition-colors"
+        >
+          <h3 class="text-xl font-medium flex items-center">
+            Conference Ticket Generator
+            <span
+              class="inline-block bg-green-200 dark:bg-green-700 text-gray-800 dark:text-gray-200 text-sm px-2 py-1 rounded ml-3"
+            >
+              Junior
+            </span>
+          </h3>
+          <p>
+            En este desafío, crearás un formulario que genere un ticket. Hay
+            muchas posibilidades de personalizar el ticket generado y de poner
+            tu propio sello en el proyecto.
+          </p>
+          <a
+            href="/ticket-generator"
+            class="block text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
+            aria-label="Ir a la página del generador de tickets"
+          >
+            Ir a página
+          </a>
+        </article>
+      </section>
+    </section>
+  </main>
 </Layout>
