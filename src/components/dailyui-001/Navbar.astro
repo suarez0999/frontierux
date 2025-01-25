@@ -1,14 +1,12 @@
----
-import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astro";
----
-
 <nav class="bg-white shadow-md fixed top-0 w-full z-10 font-Poppins">
   <div class="container mx-auto flex justify-between items-center p-4">
     <!-- Logo -->
     <div class="text-2xl font-bold text-indigo-600">ConversApp</div>
 
     <!-- Menú -->
-    <div class="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
+    <div
+      class="hidden md:flex space-x-6 text-gray-700 font-medium items-center"
+    >
       <a href="#home" class="hover:text-indigo-600 transition">Home</a>
       <a href="#service" class="hover:text-indigo-600 transition">Services</a>
       <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
@@ -27,8 +25,18 @@ import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astr
       aria-label="Open Menu"
       class="block md:hidden text-gray-700 focus:outline-none"
     >
-      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"></path>
       </svg>
     </button>
   </div>
@@ -65,14 +73,26 @@ import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astr
         class="text-gray-500 hover:text-gray-700"
         data-modal-hide="authentication-modal"
       >
-        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <svg
+          class="w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
     <form class="mt-4 space-y-4">
       <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Email</label
+        >
         <input
           type="email"
           id="email"
@@ -82,7 +102,9 @@ import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astr
         />
       </div>
       <div>
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <label for="password" class="block text-sm font-medium text-gray-700"
+          >Password</label
+        >
         <input
           type="password"
           id="password"
@@ -103,16 +125,16 @@ import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astr
 
 <script is:inline>
   // Toggle mobile menu
-  document.getElementById('menu-toggle').addEventListener('click', () => {
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu.classList.toggle('hidden');
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
   });
 
   // Handle modal toggle
-  document.querySelectorAll('[data-modal-toggle]').forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-      const modal = document.getElementById('authentication-modal');
-      modal.classList.toggle('hidden');
+  document.querySelectorAll("[data-modal-toggle]").forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const modal = document.getElementById("authentication-modal");
+      modal.classList.toggle("hidden");
     });
   });
 </script>
