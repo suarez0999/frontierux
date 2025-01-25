@@ -1,0 +1,79 @@
+---
+import LibraryPhoto_Daily001 from "@icons/dailyui-001-icons/Photo_Daily001.astro";
+import Video_Daily001 from "@icons/dailyui-001-icons/Video_Daily001.astro";
+import Messages_Daily001 from "@icons/dailyui-001-icons/Messages_Daily001.astro";
+---
+
+<section id="services" class="bg-gray-50 py-12 px-6 md:px-12">
+  <div class="container mx-auto">
+    <!-- Title -->
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-4"
+      >
+        Services that <span class="text-indigo-600"
+          >enhance your connection</span
+        >
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Discover everything our app can do to transform your conversations into
+        unforgettable experiences.
+      </p>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+      >
+        <div
+          class="flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full w-14 h-14 mb-4"
+        >
+          <Messages_Daily001 />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Real-Time Chats
+        </h3>
+        <p class="text-gray-600">
+          Send instant messages to your friends without delays, with fast and
+          accurate notifications.
+        </p>
+      </div>
+
+      <!-- Service 2 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+      >
+        <div
+          class="flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full w-14 h-14 mb-4"
+        >
+          <Video_Daily001 />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Calls and Video Calls
+        </h3>
+        <p class="text-gray-600">
+          Connect face-to-face with your friends from anywhere in the world with
+          high-quality calls.
+        </p>
+      </div>
+
+      <!-- Service 3 -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+      >
+        <div
+          class="flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full w-14 h-14 mb-4"
+        >
+          <LibraryPhoto_Daily001 />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Media Sharing</h3>
+        <p class="text-gray-600">
+          Share photos, videos, and audio quickly and securely, with support for
+          high-quality files.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
