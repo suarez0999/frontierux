@@ -1,40 +1,46 @@
 ---
-import ConversatioSVG from "../../components/svg/dailyui-001/conversation-4.astro";
+import ConversationSVG from "@svg/dailyui-001/conversation.astro";
 ---
 
-<section id="home">
+<section id="home" class="relative overflow-hidden">
   <div
     class="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-100 flex flex-col md:flex-row items-center justify-center p-6 md:p-12 mt-16 lg:mt-0"
   >
-    <!-- Sección de Texto -->
+    <!-- Text Section -->
     <div class="max-w-lg md:w-1/2 flex flex-col space-y-6">
-      <!-- Título Principal -->
+      <!-- Main Title -->
       <h1
         class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
       >
         Connect with friends <span class="text-indigo-600"
-          >¡and live the experience!</span
+          >and live the experience!</span
         >
       </h1>
 
-      <!-- Descripción -->
+      <!-- Description -->
       <p class="text-lg text-gray-700 mt-2">
-        Join our app for easy, fast and fun communication. Share moments and
-        stay connected with those who matter most.
+        Join our app for effortless, quick, and enjoyable communication. Share
+        moments and stay connected with the people who matter most in your life.
       </p>
 
-      <!-- Botón Principal -->
+      <!-- Primary Button -->
       <a
-      href="#contact"
-        class="mt-4 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg transition-transform duration-300 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring focus:ring-indigo-300 items-center flex justify-center"
+        href="#contact"
+        class="mt-4 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg transition-transform duration-300 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring focus:ring-indigo-300 flex items-center justify-center"
+        aria-label="Register now to connect with friends"
       >
         Register Now
       </a>
     </div>
 
-    <!-- Imagen SVG -->
-    <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center items-center">
-      <ConversatioSVG class="w-full max-w-sm sm:max-w-md lg:max-w-lg" />
+    <!-- SVG Illustration -->
+    <div
+      class="mt-8 md:mt-0 md:w-1/2 flex justify-center items-center overflow-hidden"
+    >
+      <ConversationSVG
+        class="w-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg max-h-48 sm:max-h-64 md:max-h-full object-contain"
+        alt="Illustration of people communicating and connecting"
+      />
     </div>
   </div>
 </section>
