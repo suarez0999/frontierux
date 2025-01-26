@@ -1,0 +1,69 @@
+---
+interface CardProps {
+  image: string;
+  badgeText: string;
+  title: string;
+  description: string;
+  authorImage: string;
+  authorName: string;
+  date: string;
+  link: string;
+  linkText: string;
+}
+
+interface CardGridProps {
+  cards?: CardProps[];
+}
+
+const { cards = [] }: CardGridProps = Astro.props;
+---
+
+{cards.map((card) => (
+  <div>
+    <div class="relative flex flex-col my-6 bg-white dark:bg-gray-800 shadow-sm border border-slate-200 dark:border-gray-700 rounded-lg w-96 transition-colors">
+      <!-- Imagen principal -->
+      <div class="relative h-48 m-2.5 overflow-hidden text-white rounded-md shadow-sm border border-slate-200 dark:border-gray-700">
+        <img src={card.image} alt="Card Image" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Contenido -->
+      <div class="p-4">
+        <!-- Badge -->
+        <div class="mb-4 rounded-full bg-cyan-600 dark:bg-cyan-500 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
+          {card.badgeText}
+        </div>
+        <!-- Título -->
+        <h6 class="mb-2 text-slate-800 dark:text-white text-xl font-semibold truncate">
+          {card.title}
+        </h6>
+        <!-- Descripción -->
+        <p class="text-slate-600 dark:text-gray-300 leading-normal font-light line-clamp-3">
+          {card.description}
+        </p>
+      </div>
+
+      <!-- Pie de la tarjeta -->
+      <div class="flex items-center justify-between p-4">
+        <div class="flex items-center">
+          <!-- Imagen del autor -->
+          <img
+            alt={card.authorName}
+            src={card.authorImage}
+            class="relative inline-block h-8 w-8 rounded-full"
+          />
+          <div class="flex flex-col ml-3 text-sm">
+            <span class="text-slate-800 dark:text-white font-semibold">{card.authorName}</span>
+            <span class="text-slate-600 dark:text-gray-400">{card.date}</span>
+          </div>
+        </div>
+        <!-- Botón de acción -->
+        <a
+          href={card.link}
+          class="mt-4 px-6 py-2 bg-indigo-600 dark:bg-indigo-500 text-white font-semibold rounded-xl shadow-lg transition-transform duration-300 hover:bg-indigo-700 dark:hover:bg-indigo-600 hover:scale-105 focus:outline-none focus:ring focus:ring-indigo-300 dark:focus:ring-indigo-400 flex items-center justify-center"
+        >
+          {card.linkText}
+        </a>
+      </div>
+    </div>
+  </div>
+))}

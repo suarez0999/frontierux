@@ -1,0 +1,46 @@
+---
+import CardGrid from "@ui/Card.astro";
+
+const cards = [
+  {
+    image: "https://picsum.photos/id/120/600/400",
+    badgeText: "Junior",
+    title: "Mortgage repayment calculator",
+    description:
+      "This mortgage calculator is an excellent project for practicing working with forms, client-side validation, and updating the DOM. Remember to focus on accessibility, too!",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 24, 2025",
+    link: "/dailyui-001",
+    linkText: "Explore Now",
+  },
+  {
+    image: "https://picsum.photos/id/100/600/400",
+    badgeText: "Junior",
+    title: "Conference ticket generator",
+    description:
+      "In this challenge, you'll create a form that generates a ticket. There's a lot of scope for customizing the generated ticket and putting your own stamp on the project.",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 25, 2025",
+    link: "/dailyui-002",
+    linkText: "Explore Now",
+  },
+  {
+    image: "https://picsum.photos/id/992/600/400",
+    badgeText: "Junior",
+    title: "Bento grid",
+    description:
+      "This challenge is perfect for testing your CSS Grid and responsive skills with this bento grid layout.",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 26, 2025",
+    link: "/",
+    linkText: "Explore Now",
+  },
+];
+---
+
+<div class="flex flex-wrap justify-center gap-3">
+  <CardGrid cards={cards} />
+</div>
