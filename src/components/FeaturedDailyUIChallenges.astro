@@ -1,0 +1,46 @@
+---
+import CardGrid from "@ui/Card.astro";
+
+const cards = [
+  {
+    image: "/image011.png",
+    badgeText: "Junior",
+    title: "DailyUI #001 - Sign Up",
+    description:
+      "Create a sign up page, modal, form, or app screen related to signing up for something. It could be for a volunteer event, contest registration, a giveaway, or anything you can image.",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 24, 2025",
+    link: "/dailyui-001",
+    linkText: "Explore Now",
+  },
+  {
+    image: "https://picsum.photos/id/1020/600/400",
+    badgeText: "Junior",
+    title: "DailyUI #002 - Credit Card Checkout",
+    description:
+      "Design a credit card checkout form or page. Don't forget the important elements such as the numbers, dates, security numbers, etc.",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 25, 2025",
+    link: "/dailyui-002",
+    linkText: "Explore Now",
+  },
+  {
+    image: "https://picsum.photos/id/972/600/400",
+    badgeText: "Junior",
+    title: "DailyUI #003 - lorem",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur, accusamus odio nisi itaque beatae molestiae perspiciatis consequuntur eius ducimus? Soluta fuga aliquid perspiciatis laudantium iure voluptatibus, quia architecto ab!",
+    authorImage: "/image.png",
+    authorName: "Diego Suarez",
+    date: "January 26, 2025",
+    link: "/",
+    linkText: "Explore Now",
+  },
+];
+---
+
+<div class="flex flex-wrap justify-center gap-3">
+  <CardGrid cards={cards} />
+</div>
